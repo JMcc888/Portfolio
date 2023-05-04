@@ -27,8 +27,18 @@
     align-items: center;
 }
 
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .my-work-item-wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

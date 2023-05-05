@@ -42,3 +42,47 @@
     justify-content: center;
     align-items: center;
 }
+
+.my-tools i {
+    font-size: 2.5rem;
+}
+
+.my-tools i:hover {
+    color: aqua;
+}
+
+@keyframes change-text {
+    0% { opacity: 0; }
+    60% { opacity: 1; }
+    100% { opacity: 1; }
+  }
+
+.hero-h1 {
+    animation: change-text 2s ease-out none;
+}
+
+#iama::after {
+    content: "";
+    animation: change-word 15s linear infinite;
+}
+
+@keyframes change-word {
+    0% { content:"Father";}
+    10% {opacity: 0;}
+    15% {opacity: 1;}
+    20% { content:"College Graduate";}
+    30% {opacity: 0;}
+    35% {opacity: 1;}
+    40% { content: "Software Developer";}
+    50% {opacity: 0;}
+    55% {opacity: 1;}
+    60% { content: "Problem Solver"; }
+    70% {opacity: 0;}
+    75% {opacity: 1;}
+    80% {content: "Leader"}
+    95% {opacity: 0;}
+  }
+
+  .footer i {
+    font-size: 2rem;
+  }

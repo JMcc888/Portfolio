@@ -50,9 +50,9 @@
     margin: 0.5rem;
 }
 
-.my-tools i:hover {
+/* .my-tools i:hover {
     color: aqua;
-}
+} */
 
 @keyframes change-text {
     0% { opacity: 0; }
@@ -110,4 +110,16 @@
   .footer i {
     font-size: 2.8rem;
     margin: 0.5rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    .card {
+        max-width: 320px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .my-work-icons {
+        width: 100%;
+    }
   }

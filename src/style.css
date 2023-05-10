@@ -18,6 +18,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .landing-section {
@@ -44,7 +46,8 @@
 }
 
 .my-tools i {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    margin: 0.5rem;
 }
 
 .my-tools i:hover {
@@ -61,28 +64,50 @@
     animation: change-text 2s ease-out none;
 }
 
-#iama::after {
-    content: "";
-    animation: change-word 15s linear infinite;
+.iama-wrap {
+    box-shadow: 0.5rem 0.5rem 2rem 0.5rem pink,
+    -0.5rem -0.5rem 2rem 0.5rem yellowgreen;
 }
 
-@keyframes change-word {
-    0% { content:"Father";}
-    10% {opacity: 0;}
-    15% {opacity: 1;}
-    20% { content:"College Graduate";}
-    30% {opacity: 0;}
-    35% {opacity: 1;}
-    40% { content: "Software Developer";}
-    50% {opacity: 0;}
-    55% {opacity: 1;}
-    60% { content: "Problem Solver"; }
-    70% {opacity: 0;}
-    75% {opacity: 1;}
-    80% {content: "Leader"}
-    95% {opacity: 0;}
+#iama-father {
+    animation: flash 3s linear infinite;
+}
+
+#iama-grad {
+    animation: flash 3s linear infinite;
+    animation-delay: 0.3s;
+
+}
+
+#iama-sde {
+    animation: flash 3s linear infinite;
+    animation-delay: 0.6s;
+
+
+}
+
+#iama-ps {
+    animation: flash 3s linear infinite;
+    animation-delay: 0.9s;
+
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+      }
+    
+      50% {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    
+      100% {
+        opacity: 0;
+      }
   }
 
   .footer i {
-    font-size: 2rem;
+    font-size: 2.8rem;
+    margin: 0.5rem;
   }

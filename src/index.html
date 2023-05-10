@@ -24,24 +24,30 @@
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
               <h1 class="mb-5 text-5xl font-bold hero-h1">Here's Johnny!</h1>
-              <p class="mb-5">My name is Johnny McCollough Jr. and I am a</p>
-              <span id="iama"></span>
+              <p class="mb-5 text-lg">My name is Johnny McCollough Jr. and I am a</p>
+              <div class="iama-wrap mt-5 flex flex-col">
+              <span id="iama-father" class="text-lg">Father</span>
+              <span id="iama-grad" class="text-lg">College Graduate</span>
+              <span id="iama-sde" class="text-lg">Software Developer</span>
+              <span id="iama-ps" class="text-lg">Problem Solver</span>
+              </div>
+              
             </div>
           </div>
         </div>
 
         <div class="my-mission w-full py-4 flex flex-col justify-center text-center items-center bg-primary-content">
-          <div class="my-mission-content py-2 px-3 w-3/6">
+          <div class="my-mission-content py-2 px-3 w-4/6">
             <h3 class="text-2xl">My Mission</h3>
-          <p>My objective is to enhance the lives of others through the use of software. As technology continues to improve, society will grow further as well and I aim to build products that will help this new society.</p>
+          <p class="text-lg">My objective is to enhance the lives of others through the use of software. As technology continues to improve, society will grow further as well and I aim to build products that will continue to help others as society advances.</p>
           </div>
           
         </div>
 
 
         <!-- My Work -->
-        <div class="my-work">
-            <p>My Work</p>
+        <div class="my-work p-5">
+            <p class="text-3xl my-2">My Work</p>
             <div class="my-work-item-wrapper">
 
               <div class="my-work-item card w-96 bg-neutral-focus m-1 shadow-xl">
@@ -102,45 +108,91 @@
 
 
         </div>
-        <div class="my-tools bg-orange-600">
-            <p>Tools I utilize</p>
+        <div class="my-tools p-12 w-full items-center flex flex-col bg-orange-600">
+            <p class="text-3xl">Tools I enjoy using:</p>
 
-            <i class="devicon-react-original"></i>   
+            <div class="my-work-icons w-5/12 lg:w-2/5 xl:w-4/5 flex flex-row items-center justify-center flex-wrap">
+              <i class="devicon-react-original"></i>   
 
-            <i class="devicon-typescript-plain"></i>
-          
-            <i class="devicon-sass-original"></i>
-          
-            <i class="devicon-css3-plain"></i>
-
-            <i class="devicon-redux-original"></i>
-          
-            <i class="devicon-postgresql-plain"></i>
-          
-            <i class="devicon-php-plain"></i>
+              <i class="devicon-typescript-plain"></i>
             
-            <i class="devicon-express-original"></i>
-          
-            <i class="devicon-git-plain"></i>
-          
-            <i class="devicon-javascript-plain"></i>
-          
-            <i class="devicon-html5-plain"></i>
+              <i class="devicon-sass-original"></i>
+            
+              <i class="devicon-css3-plain"></i>
+  
+              <i class="devicon-redux-original"></i>
+            
+              <i class="devicon-postgresql-plain"></i>
+            
+              <i class="devicon-php-plain"></i>
+              
+              <i class="devicon-express-original"></i>
+            
+              <i class="devicon-git-plain"></i>
+            
+              <i class="devicon-javascript-plain"></i>
+            
+              <i class="devicon-html5-plain"></i>
+  
+              <i class="devicon-mysql-plain"></i>
+            
+              <i class="devicon-mongodb-plain"></i>
+            
+              <i class="devicon-nestjs-plain"></i>
 
-            <i class="devicon-mysql-plain"></i>
-          
-            <i class="devicon-mongodb-plain"></i>
-          
-            <i class="devicon-nestjs-plain"></i>
+              <i class="devicon-csharp-plain"></i>
+
+              <i class="devicon-dotnetcore-plain"></i>
+            </div>
+
+            
                     
         </div>
 
-        <div class="contact-me">
-          <h5>Contact Me</h5>
+        <div class="contact-me bg-secondary-content w-full flex flex-col text-center">
+          <h5 class="text-3xl mt-3">Contact Me</h5>
+          <div class="contact-me-content-wrap flex flex-row justify-evenly flex-wrap">
+            <div class="contact-me-text w-5/6 sm:w-3/6 flex justify-center items-center">
+              <p class="text-2xl">I'd love to hear from you! Feel free to drop a message about anything. Whether it's song recommendations, asking about working with me, or your best knock-knock joke, I'd love to hear it. I am eager to discuss any questions or ideas you may have.</p>
+            </div>
             
+            <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100  m-4">
+            <div class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Name</span>
+                </label>
+                <input type="text" placeholder="name" class="input input-bordered" />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Email</span>
+                </label>
+                <input type="text" placeholder="email" class="input input-bordered" />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Subject</span>
+                </label>
+                <input type="text" placeholder="subject" class="input input-bordered" />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Message</span>
+                </label>
+                <textarea type="text" placeholder="Enter your message" class="input input-bordered"></textarea>
+              </div>
+              <div class="form-control mt-6">
+                <button class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+     
         </div>
 
-        <footer class="footer p-10 bg-neutral text-neutral-content">
+        <footer class="footer items-center justify-center p-10 bg-neutral text-neutral-content">
           <div class="flex mx-1">
             <a href="https://github.com/JMcc888"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/johnny-mccollough-07875424a/"><i class="fa-brands fa-linkedin-in"></i></a>

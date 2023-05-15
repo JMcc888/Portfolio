@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+*::selection {
+    background-color: hsl(var(--p));
+}
+
 
 .index-wrap {
     display: flex;
@@ -65,8 +69,8 @@
 }
 
 .iama-wrap {
-    box-shadow: 0.5rem 0.5rem 2rem 0.5rem pink,
-    -0.5rem -0.5rem 2rem 0.5rem yellowgreen;
+    box-shadow: 0.5rem 0.5rem 2rem 0.5rem hsl(var(--p)),
+    -0.5rem -0.5rem 2rem 0.5rem hsl(var(--s));
 }
 
 #iama-father {
@@ -122,4 +126,34 @@
     .my-work-icons {
         width: 100%;
     }
+
   }
+
+  @media screen and (max-width: 600px) {
+    .hero {
+        background-position: 40%;
+    }
+    
+}
+
+  @media screen and (max-width: 803px) {
+    .contact-me-content-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+}
+
+@media screen and (max-width: 500px) {
+    .my-mission-content {
+        width: 90%;
+    }
+}
+
+
+/* @media screen and (max-width: 420px) {
+    .form-wrapper {
+        background-color: brown;
+    }
+} */

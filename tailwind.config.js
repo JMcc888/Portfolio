@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {},
   },
+  purge: ["./views/*.ejs"],
   plugins: [require("daisyui")],
   daisyui: {
     themes: ["synthwave"]

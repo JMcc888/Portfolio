@@ -9,14 +9,16 @@
     "nodemon": "^2.0.22",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^8.0.0"
+    "passport-local-mongoose": "^8.0.0",
+    "purgecss": "^5.0.0"
   },
   "name": "fardfolio",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "prod": "postcss ./public/css/style.css -o public/css/build.css"
   },
   "keywords": [],
   "author": "",

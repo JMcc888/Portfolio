@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/css/output.css">
     <script
       src="https://kit.fontawesome.com/fc8f7ea611.js"
       crossorigin="anonymous"
@@ -20,7 +20,7 @@
 <body>
     <div class="index-wrap">
         <!-- Landing -->
-        <div class="hero min-h-screen" style="background-image: url(./hero.jpg);">
+        <div class="hero min-h-screen" style="background-image: url(/img/hero.jpg);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
@@ -175,39 +175,40 @@
             </div>
 
             <div class="form-wrapper flex flex-col items-center justify-center">
-              <form class="card p-2 flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100  m-4" action="">
+              <form class="card p-2 flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100  m-4" action="/"
+              method="POST">
               <div class="card-body">
                 <div class="form-control">
                   <label class="label">
                     <span class="label-text">Name</span>
                   </label>
-                  <input type="text" placeholder="name" class="input input-bordered" />
+                  <input type="text" placeholder="name" class="input input-bordered" required name="Name" />
                 </div>
                 <div class="form-control">
                   <label class="label">
                     <span class="label-text">Email</span>
                   </label>
-                  <input type="text" placeholder="email" class="input input-bordered" />
+                  <input type="email" placeholder="email" class="input input-bordered" required name="Email" />
                 </div>
                 <div class="form-control">
                   <label class="label">
                     <span class="label-text">Subject</span>
                   </label>
-                  <input type="text" placeholder="subject" class="input input-bordered" />
+                  <input type="text" placeholder="subject" class="input input-bordered" required name="Subject" />
                 </div>
                 <div class="form-control">
                   <label class="label">
                     <span class="label-text">Message</span>
                   </label>
-                  <textarea type="text" placeholder="Enter your message" class="input input-bordered"></textarea>
+                  <textarea type="text" placeholder="Enter your message" class="input input-bordered" required name="Message"></textarea>
                 </div>
                 <div class="form-control mt-6">
                   <button class="btn btn-primary">Submit</button>
                 </div>
               </div>
               
-          </form>
-            </div>
+            </form>
+        </div>
             
             
 

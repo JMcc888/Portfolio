@@ -59,13 +59,21 @@
 } */
 
 @keyframes change-text {
-    0% { opacity: 0; }
-    60% { opacity: 1; }
-    100% { opacity: 1; }
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: hsl(var(--a)); }
   }
 
 .hero-h1 {
-    animation: change-text 2s ease-out none;
+  overflow: hidden;
+  border-right: .15rem solid hsl(var(--a));
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: change-text 3s steps(40, end), blink-caret .75s step-end infinite;
 }
 
 .iama-wrap {

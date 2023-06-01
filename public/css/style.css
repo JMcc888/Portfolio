@@ -144,14 +144,30 @@
     
 }
 
+@media screen and (max-width: 825px) {
+    .contact-me-content-wrap p {
+    font-size: 1.7rem;
+}
+}
+
   @media screen and (max-width: 803px) {
     .contact-me-content-wrap {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    } 
+    }
+
+    .contact-me-content-wrap p {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.7rem;
+    }    
 }
+
+
+
+
 
 @media screen and (max-width: 500px) {
     .my-mission-content {
